@@ -1,0 +1,68 @@
+.models {
+  margin-top: 100px;
+  max-width: 1500px !important;
+}
+
+.models h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+/* Aseguramos que los elementos dentro de este contenedor se alineen bien */
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor de los botones que contiene los filtros */
+.d-flex.align-items-center.mb-3 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  position: relative;
+  z-index: -1;
+}
+
+.line-models {
+  width: 100%;
+}
+
+.label {
+  margin-right: 30px !important;
+}
+
+
+
+/* Ajustes en la distribución de las tarjetas para móviles */
+@media (max-width: 768px) {
+  .models h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  /* Ocultar botones y mostrar select */
+  span {
+    display: none !important;
+  }
+
+  .filter-buttons {
+    display: none;
+  }
+
+  .filter-select {
+    display: block;
+  }
+
+  .custom-tab {
+    padding: 5px 15px !important;
+    font-size: 14px;
+    height: 30px;
+  }
+
+}
+
+

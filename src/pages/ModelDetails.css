@@ -1,0 +1,56 @@
+/* Estilos generales */
+.text-start-1 {
+    margin-left: 80px;
+}
+
+.text-start-1 h2 {
+    font-size: 50px !important;
+}
+
+.text-start-1 p {
+    margin-top: 35px;
+    font-size: 16px !important;
+}
+
+.text-start-2 {
+    margin-left: 130px;
+    margin-right: 150px;
+}
+
+.text-start-2 h2 {
+    font-size: 20px !important;
+}
+
+.text-start-2 p {
+    font-size: 16px !important;
+}
+
+.text-start-3 {
+    margin-left: 130px;
+    margin-right: 150px;
+}
+
+.text-start-3 h2 {
+    font-size: 20px !important;
+}
+
+.text-start-3 p {
+    font-size: 16px !important;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .text-start-1, .text-start-2, .text-start-3 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .text-start-1 h2, .text-start-2 h2, .text-start-3 h2 {
+        font-size: 20px !important;  /* Ajusta el tamaño de fuente en móviles */
+    }
+
+    .text-start-1 p, .text-start-2 p, .text-start-3 p {
+        font-size: 14px !important;  /* Ajusta el tamaño del párrafo */
+        margin-top: 15px !important;  /* Ajusta el margen superior */
+    }
+}

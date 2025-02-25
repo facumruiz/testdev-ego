@@ -1,0 +1,10 @@
+/* Importar la fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Establecer la fuente globalmente */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+  appearance: none;  /* Quita el estilo predeterminado del select */
+  -webkit-appearance: none; /* Para Safari */
+  -moz-appearance: none; /* Para Firefox */
+}

@@ -1,0 +1,92 @@
+/* Aseguramos que el contenedor use todo el ancho */
+.carousel-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 50px !important; /* Espacio adicional en la parte inferior */
+  padding-bottom: 10px !important; /* Espacio extra para los indicadores */
+  padding-top: 50px !important;
+  
+}
+
+
+
+/* Asegurar que las tarjetas tengan un diseño uniforme */
+.carousel-card {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 0;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: none !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 17rem;
+
+}
+
+/* Asegurar tamaño fijo de las imágenes */
+.carousel-card img {
+  border-radius: 0;
+  object-fit: cover;
+  width: 269px !important;
+  height: 146px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ajustar espacio del carrusel para que los indicadores tengan lugar */
+.carousel .carousel-inner {
+  padding-bottom: 50px; /* Espacio extra para bajar los indicadores */
+}
+
+/* Estilos de los indicadores (puntos de navegación) */
+.carousel-indicators li {
+  background-color: #a1a1a180; /* Color gris oscuro */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #C5C5C5 !important; /* Gris más claro */
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-indicators .active {
+  width: 39px;
+  height: 10px;
+  border-radius: 11px; /* Bordes más suaves */
+  background-color: #858585 !important; /* Mantiene el mismo gris */
+  border: 0px solid #000000; /* Borde negro en las puntas */
+  margin-top: 10px; /* Ajusta la posición si sube hacia arriba */
+  line-height: 1px; /* Alinea verticalmente el texto (si es necesario) */
+}
+
+
+
+
+/* Ajustes de las flechas de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #ffffff;
+  width: 50px;
+  height: 148px;
+  top: 24%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(30%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  
+}

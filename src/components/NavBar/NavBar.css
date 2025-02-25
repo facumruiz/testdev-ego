@@ -1,0 +1,223 @@
+/* ----------------------------- */
+/* Navbar                        */
+/* ----------------------------- */
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.048);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10000;
+}
+
+.logo {
+  margin-left: 35px;
+  margin-right: 150px;
+}
+
+/* Contenedor de botones en la Navbar */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-buttons .btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-buttons .btn:hover {
+  color: #EB0A1E;
+}
+
+.navbar-buttons .btn::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #EB0A1E;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-buttons .btn:hover::after {
+  transform: scaleX(1);
+}
+
+/* ----------------------------- */
+/* Botón Hamburguesa              */
+/* ----------------------------- */
+
+.navbar-toggler {
+  border: none !important;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Si el botón está abierto */
+.navbar-toggler.open {
+  background-color: transparent;
+}
+
+/* ----------------------------- */
+/* Sidebar                       */
+/* ----------------------------- */
+
+.sidebar {
+  text-align: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10000;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  text-align: right;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Icono de cierre */
+.sidebar .close-icon {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px 20px;
+}
+
+/* ----------------------------- */
+/* Navbar Links                   */
+/* ----------------------------- */
+
+.navbar-nav {
+  padding-top: 60px;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  margin-right: 75px;
+  font-size: 21px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #EB0A1E !important;
+}
+
+/* ----------------------------- */
+/* Menú y botón de cierre         */
+/* ----------------------------- */
+
+.close-nav {
+  margin-right: 20px !important;
+}
+
+.menu-text {
+  font-size: 16px;
+  margin-left: auto;
+  color: #333;
+}
+
+.btn-close-menu {
+  margin-top: 13px;
+}
+
+/* ----------------------------- */
+/* Otros estilos                  */
+/* ----------------------------- */
+
+.bg-light-gray {
+  background-color: #F2F2F2;
+}
+
+.line {
+  width: 80%;
+}
+
+.cross {
+  margin-right: 20px;
+  width: 20px;
+}
+
+/* ----------------------------- */
+/* Estilos Responsivos (Móviles)  */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  /* Ocultamos los botones en la navbar en móviles */
+  .navbar-buttons .btn {
+    display: none !important;
+  }
+
+  /* Sidebar con scroll solo cuando está activo */
+  .sidebar {
+    width: 100%;
+    top: 60px;
+    overflow-y: auto;
+  }
+
+  .sidebar .close-icon {
+    font-size: 24px;
+    margin: 0;
+    /* Sin márgenes si no los necesitas */
+  }
+
+
+  .navbar-nav {
+    padding-top: 0px !important;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    margin-right: 60px;
+  }
+
+  .close-nav {
+    margin-right: 60px !important;
+  }
+
+  .menu-text {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .btn-close-menu {
+    margin-top: 0px;
+  }
+
+  .cross {
+    width: 18px;
+  }
+}
